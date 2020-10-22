@@ -1,0 +1,148 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L my_library:Photodiode_can D3
+U 1 1 5F99588E
+P 4600 3450
+F 0 "D3" V 4504 3608 50  0000 L CNN
+F 1 "Photodiode_can" V 4595 3608 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-46-3_Window" H 4550 3450 50  0001 C CNN
+F 3 "~" H 4550 3450 50  0001 C CNN
+	1    4600 3450
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:DIODE D1
+U 1 1 5F995F0E
+P 3100 3550
+F 0 "D1" V 3054 3678 50  0000 L CNN
+F 1 "DIODE" V 3145 3678 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 3100 3550 50  0001 C CNN
+F 3 "~" H 3100 3550 50  0001 C CNN
+	1    3100 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L pspice:DIODE D2
+U 1 1 5F996517
+P 3650 3550
+F 0 "D2" V 3696 3422 50  0000 R CNN
+F 1 "DIODE" V 3605 3422 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 3650 3550 50  0001 C CNN
+F 3 "~" H 3650 3550 50  0001 C CNN
+	1    3650 3550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_US R1
+U 1 1 5F996E5E
+P 4600 2750
+F 0 "R1" H 4668 2796 50  0000 L CNN
+F 1 "100R" H 4668 2705 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4640 2740 50  0001 C CNN
+F 3 "~" H 4600 2750 50  0001 C CNN
+	1    4600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5F997F74
+P 4600 3900
+F 0 "#PWR03" H 4600 3650 50  0001 C CNN
+F 1 "GND" H 4605 3727 50  0000 C CNN
+F 2 "" H 4600 3900 50  0001 C CNN
+F 3 "" H 4600 3900 50  0001 C CNN
+	1    4600 3900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 3900 4600 3550
+$Comp
+L power:GND #PWR02
+U 1 1 5F99826F
+P 4400 3650
+F 0 "#PWR02" H 4400 3400 50  0001 C CNN
+F 1 "GND" H 4405 3477 50  0000 C CNN
+F 2 "" H 4400 3650 50  0001 C CNN
+F 3 "" H 4400 3650 50  0001 C CNN
+	1    4400 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4400 3650 4400 3500
+Wire Wire Line
+	4600 3250 4600 3150
+$Comp
+L Connector:Conn_Coaxial J1
+U 1 1 5F998B03
+P 5650 2600
+F 0 "J1" H 5750 2575 50  0000 L CNN
+F 1 "Conn_Coaxial" H 5750 2484 50  0000 L CNN
+F 2 "my_library_foot:CON-SMA-EDGE-S" H 5650 2600 50  0001 C CNN
+F 3 " ~" H 5650 2600 50  0001 C CNN
+	1    5650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5F999301
+P 5650 2950
+F 0 "#PWR04" H 5650 2700 50  0001 C CNN
+F 1 "GND" H 5655 2777 50  0000 C CNN
+F 2 "" H 5650 2950 50  0001 C CNN
+F 3 "" H 5650 2950 50  0001 C CNN
+	1    5650 2950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 2950 5650 2800
+Wire Wire Line
+	4600 2600 5450 2600
+Wire Wire Line
+	3100 3750 3100 3900
+Wire Wire Line
+	3100 3900 3400 3900
+Wire Wire Line
+	3650 3900 3650 3750
+Wire Wire Line
+	3650 3350 3650 3150
+Wire Wire Line
+	3100 3150 3100 3350
+Wire Wire Line
+	3100 3150 3650 3150
+Connection ~ 4600 3150
+Wire Wire Line
+	4600 3150 4600 2900
+Connection ~ 3650 3150
+Wire Wire Line
+	3650 3150 4600 3150
+$Comp
+L power:GND #PWR01
+U 1 1 5F99A2B1
+P 3400 4050
+F 0 "#PWR01" H 3400 3800 50  0001 C CNN
+F 1 "GND" H 3405 3877 50  0000 C CNN
+F 2 "" H 3400 4050 50  0001 C CNN
+F 3 "" H 3400 4050 50  0001 C CNN
+	1    3400 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 4050 3400 3900
+Connection ~ 3400 3900
+Wire Wire Line
+	3400 3900 3650 3900
+$EndSCHEMATC
