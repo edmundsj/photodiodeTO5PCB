@@ -1,4 +1,4 @@
-18655972519224222
+18660832372154658
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -56076,6 +56076,13 @@ Yellow 5381 Series LED
 0
 2
 2
+LTC4724
+LTC-4724JR
+
+
+0
+12
+12
 Module
 A20_OLINUXINO_LIME2
 A20 Olinuxino LIME2, 1.2GHz, 512-1024MB RAM, Micro-SD, NAND or eMMC, 1000Mbit Ethernet
@@ -82058,7 +82065,7 @@ CON-SMA-EDGE-S
 Molex SMA RF Connectors, Edge Mount, (http://www.molex.com/pdm_docs/sd/732511150_sd.pdf)
 sma edge
 0
-9
+5
 2
 my_library_foot
 Jack_XLR_Switchcraft
@@ -82067,6 +82074,20 @@ neutrik xlr aa
 0
 3
 3
+my_library_foot
+P120PK_Potentiometer
+Potentiometer, vertical, 9mm, single, http://www.taiwanalpha.com.tw/downloads?target=products&id=113
+potentiometer vertical 9mm single
+0
+5
+3
+my_library_foot
+TO-220_resistor
+TO-220-5, Vertical, RM 1.7mm, Pentawatt, Multiwatt-5, staggered type-2, see http://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/ltc-legacy-to-220/to-220_5_05-08-1421.pdf?domain=www.linear.com, https://www.diodes.com/assets/Package-Files/TO220-5.pdf
+TO-220-5 Vertical RM 1.7mm Pentawatt Multiwatt-5 staggered type-2
+0
+2
+2
 my_library_foot
 TestPoint_Keystone_5000-5004_Miniature
 Keystone Miniature THM Test Point 5000-5004, http://www.keyelco.com/product-pdf.cfm?p=1309

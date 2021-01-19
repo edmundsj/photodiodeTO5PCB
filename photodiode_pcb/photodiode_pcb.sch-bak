@@ -14,17 +14,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L my_library:Photodiode_can D3
-U 1 1 5F99588E
-P 4600 3450
-F 0 "D3" V 4504 3608 50  0000 L CNN
-F 1 "Photodiode_can" V 4595 3608 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-46-3_Window" H 4550 3450 50  0001 C CNN
-F 3 "~" H 4550 3450 50  0001 C CNN
-	1    4600 3450
-	0    1    1    0   
-$EndComp
-$Comp
 L pspice:DIODE D1
 U 1 1 5F995F0E
 P 3100 3550
@@ -70,19 +59,6 @@ F 3 "" H 4600 3900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4600 3900 4600 3550
-$Comp
-L power:GND #PWR02
-U 1 1 5F99826F
-P 4400 3650
-F 0 "#PWR02" H 4400 3400 50  0001 C CNN
-F 1 "GND" H 4405 3477 50  0000 C CNN
-F 2 "" H 4400 3650 50  0001 C CNN
-F 3 "" H 4400 3650 50  0001 C CNN
-	1    4400 3650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4400 3650 4400 3500
 Wire Wire Line
 	4600 3250 4600 3150
 $Comp
@@ -145,4 +121,103 @@ Wire Wire Line
 Connection ~ 3400 3900
 Wire Wire Line
 	3400 3900 3650 3900
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5F9A692F
+P 2950 4700
+F 0 "H1" H 3050 4749 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3050 4658 50  0000 L CNN
+F 2 "my_library_foot:m3_mounting_hole" H 2950 4700 50  0001 C CNN
+F 3 "~" H 2950 4700 50  0001 C CNN
+	1    2950 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5F9A6C85
+P 2950 5100
+F 0 "H2" H 3050 5149 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3050 5058 50  0000 L CNN
+F 2 "my_library_foot:m3_mounting_hole" H 2950 5100 50  0001 C CNN
+F 3 "~" H 2950 5100 50  0001 C CNN
+	1    2950 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5F9A6F4A
+P 2950 5500
+F 0 "H3" H 3050 5549 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3050 5458 50  0000 L CNN
+F 2 "my_library_foot:m3_mounting_hole" H 2950 5500 50  0001 C CNN
+F 3 "~" H 2950 5500 50  0001 C CNN
+	1    2950 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 5F9A7151
+P 2950 5800
+F 0 "H4" H 3050 5849 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3050 5758 50  0000 L CNN
+F 2 "my_library_foot:m3_mounting_hole" H 2950 5800 50  0001 C CNN
+F 3 "~" H 2950 5800 50  0001 C CNN
+	1    2950 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F9A91E0
+P 2950 4800
+F 0 "#PWR?" H 2950 4550 50  0001 C CNN
+F 1 "GND" H 2955 4627 50  0000 C CNN
+F 2 "" H 2950 4800 50  0001 C CNN
+F 3 "" H 2950 4800 50  0001 C CNN
+	1    2950 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F9A97C4
+P 2950 5200
+F 0 "#PWR?" H 2950 4950 50  0001 C CNN
+F 1 "GND" H 2955 5027 50  0000 C CNN
+F 2 "" H 2950 5200 50  0001 C CNN
+F 3 "" H 2950 5200 50  0001 C CNN
+	1    2950 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F9A9B50
+P 2950 5900
+F 0 "#PWR?" H 2950 5650 50  0001 C CNN
+F 1 "GND" H 2955 5727 50  0000 C CNN
+F 2 "" H 2950 5900 50  0001 C CNN
+F 3 "" H 2950 5900 50  0001 C CNN
+	1    2950 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F9AA190
+P 2950 5600
+F 0 "#PWR?" H 2950 5350 50  0001 C CNN
+F 1 "GND" H 2955 5427 50  0000 C CNN
+F 2 "" H 2950 5600 50  0001 C CNN
+F 3 "" H 2950 5600 50  0001 C CNN
+	1    2950 5600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:D_Photo D?
+U 1 1 5FF793C0
+P 4600 3450
+F 0 "D?" V 4504 3608 50  0000 L CNN
+F 1 "D_Photo" V 4595 3608 50  0000 L CNN
+F 2 "" H 4550 3450 50  0001 C CNN
+F 3 "~" H 4550 3450 50  0001 C CNN
+	1    4600 3450
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
